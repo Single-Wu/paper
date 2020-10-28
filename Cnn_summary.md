@@ -118,7 +118,7 @@ VGGnet非常简洁
 
 网络发生了退化（degradation）的现象：随着网络层数的增多，训练集loss逐渐下降，然后趋于饱和，当你再增加网络深度的话，训练集loss反而会增大。
 
-![image-20200925081836807](D:\Note\image\image-20200925081836807.png)
+![image-20200925081836807](https://github.com/Single-Wu/paper/blob/main/images/image-20200925081836807.png?raw=true)
 
 
 
@@ -155,7 +155,7 @@ resnet在训练深层网络中有一些层的贡献是很少的。
 
 用更多的卷积，更深的层次可以得到更好的结构。
 
-<img src="D:\Note\image\141544_FfKB_876354.jpg" alt="img" style="zoom:60%;" />
+<img src="https://github.com/Single-Wu/paper/blob/main/images/141544_FfKB_876354.jpg?raw=true" alt="img" style="zoom:60%;" />
 
 特点：
 
@@ -178,7 +178,7 @@ $$
 4. 两个全连接层之间用dropped out，以70%随机失活
 5. 概率的输出，softmax激活输出类别概率。
 
-<img src="D:\Note\image\image-20200921152601762.png" alt="image-20200921152601762" style="zoom:30%;" />
+<img src="https://github.com/Single-Wu/paper/blob/main/images/image-20200921152601762.png?raw=true" alt="image-20200921152601762" style="zoom:30%;" />
 
 辅助分类器是为了防止梯度消失，它会按照一个最小的比例（0.3）融合到最终的分类结果中，相当于模型的融合。同时给网络增加了反向传播的梯度信号，也提供了额外的正则化，对于整个网络的训练很有裨益。而在实际测试的时候，这两个额外的softmax会被去掉。
 
@@ -206,7 +206,7 @@ $$
 
 由于5x5的卷积核所需要的计算量太大，造成特这个图的厚度很大，为了避免这种情况，在3x3前、5x5前、max pooling后分别加上了1x1的卷积核，以起到了降低特征图厚度的作用，这也就形成了Inception v1的网络结构。
 
-![img](D:\Note\image\141520_31TH_876354.png)
+![img](https://github.com/Single-Wu/paper/blob/main/images/141520_31TH_876354.png?raw=true)
 
 **Inception V2**
 
@@ -265,7 +265,7 @@ expand:包含一组连续的1x1的卷积和3x3的same padding卷积concatnate组
 
 
 
-![image-20201021083426203](D:\Note\image\image-20201021083426203.png)
+![image-20201021083426203](https://github.com/Single-Wu/paper/blob/main/images/image-20201021083426203.png?raw=true)
 
 **网络架构**
 
@@ -273,7 +273,7 @@ expand:包含一组连续的1x1的卷积和3x3的same padding卷积concatnate组
 
 1. 激活函数默认都使用ReLU；
 2. fire9之后接了一个rate为0.5的dropout；
-3. 使用same卷积。![image-20201021100509808](D:\Note\image\image-20201021100509808.png)
+3. 使用same卷积。![image-20201021100509808](https://github.com/Single-Wu/paper/blob/main/images/image-20201021100509808.png?raw=true)
 
 
 
@@ -289,7 +289,7 @@ expand:包含一组连续的1x1的卷积和3x3的same padding卷积concatnate组
 
 
 
-<img src="D:\Note\image\image-20201021132606148.png" alt="image-20201021132606148" style="zoom:50%;" />
+<img src="https://github.com/Single-Wu/paper/blob/main/images/image-20201021132606148.png?raw=true" alt="image-20201021132606148" style="zoom:50%;" />
 
 
 
