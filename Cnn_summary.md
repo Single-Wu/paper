@@ -186,7 +186,7 @@ $$
 
 原始输入图像为224x224x3，且都进行了零均值化的预处理操作（图像每个像素减去均值）
 
-![这里写图片描述](D:\Note\image\20160102104027555)
+![image-20201028141613154](https://github.com/Single-Wu/paper/blob/main/images/image-20201028141613154.png?raw=true)
 
 详细内容参考：https://my.oschina.net/u/876354/blog/1637819
 
